@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.app__form {
+  position: fixed;
+  padding: 20px;
+  bottom: 0;
+  z-index: 1;
+  background-color: #f6f6f6;
+  width: 90%;
+  margin: 20px;
+}
+
+.app__formControl {
+  padding: 20px;
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.app__input {
+  flex: 1;
+}
+
+.app__button {
+  flex: 0;
+}
+
+.messages__container {
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+.App__headerImage, .App__signInImage, .App__signUpImage {
+  width: 100px;
+  object-fit: contain;
+}
+
+.App__signInInput, .App__signInImage, .App__signUpImage, .App__signUpInput {
+  margin-bottom: 2rem;
+}
+
+.App__signUp {
+  border-radius: 20px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.App__signUpModal {
+    position: absolute;
+    width: 20%;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 3rem;
+}
+
+@media (max-width: 768px) {
+    .App__signUpModal {
+        width: 60%;
+    }
+}
+
+.App__logout {
+  width: 13rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.App__posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid lightgray;
+  padding: 20px;
+  background-color: #fff;
+  object-fit: contain;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.App__pleaseLogin {
+  font-weight: 400;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 3rem;
+}
